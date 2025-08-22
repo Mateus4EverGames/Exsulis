@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      amazonascena_0: -2894104234528763406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

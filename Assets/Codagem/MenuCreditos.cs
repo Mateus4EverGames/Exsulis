@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class MenuCreditos : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-       public GameObject canvaCreditos;
+    public GameObject canvaCreditos;
     public GameObject canvaMenu;
  
     public void Start()
