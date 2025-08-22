@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      japaocena_0: 5587505720639474222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
