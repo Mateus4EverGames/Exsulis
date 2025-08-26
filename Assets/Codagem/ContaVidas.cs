@@ -2,15 +2,25 @@ using UnityEngine;
 
 public class ContaVidas : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private GameObject[] coracao;
+    private PlayerMove player;
     void Start()
     {
-        
+        player = FindFirstObjectByType<PlayerMove>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+
+    }
+    
+    public void DestroiCoracao()
+    {
+        int vidaAtual = player.GetVida();
+        if (vidaAtual >= 0 && vidaAtual < coracao.Length)
+        {
+            coracao[vidaAtual].SetActive(false);
+        }
     }
 }
