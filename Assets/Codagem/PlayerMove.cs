@@ -70,7 +70,7 @@ public class PlayerMove : MonoBehaviour
             vida = 0;
             Destroy(gameObject);
             Time.timeScale = 0f;
-           //pausar.pause();
+           pausar.GameOver();
         }
     }
 
