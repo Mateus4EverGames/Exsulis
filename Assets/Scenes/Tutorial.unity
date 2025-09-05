@@ -370,7 +370,7 @@ MonoBehaviour:
   forcaPulo: 0
   vida: 0
   dano: 1
-  puxaPause: {fileID: 0}
+  puxaPause: {fileID: 1066847291}
 --- !u!212 &182336443
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35914,7 +35914,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 59
-      m_TileSpriteIndex: 43
+      m_TileSpriteIndex: 48
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -36697,8 +36697,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 4
     m_Data: {fileID: 541076744, guid: 62038fab46165ea499262ee5c993be35, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 881452107, guid: 62038fab46165ea499262ee5c993be35, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 5
     m_Data: {fileID: 1395319188, guid: 62038fab46165ea499262ee5c993be35, type: 3}
   - m_RefCount: 15
@@ -36707,8 +36707,8 @@ Tilemap:
     m_Data: {fileID: -1160257660, guid: 62038fab46165ea499262ee5c993be35, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 1495259694, guid: 62038fab46165ea499262ee5c993be35, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 881452107, guid: 62038fab46165ea499262ee5c993be35, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: -833078132, guid: 62038fab46165ea499262ee5c993be35, type: 3}
   - m_RefCount: 4

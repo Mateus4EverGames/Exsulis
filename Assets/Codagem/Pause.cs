@@ -5,7 +5,6 @@ public class Pause : MonoBehaviour
 {
     public GameObject pauseGame;
     public GameObject gameOver;
-    public GameObject gameOver;
     
     public void Start()
     {
