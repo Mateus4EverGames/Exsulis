@@ -9,7 +9,7 @@ public class Pause : MonoBehaviour
     public void Start()
     {
         pauseGame.SetActive(false);
-        gameOver.SetActive(false);
+        //gameOver.SetActive(false);
         
  
     }

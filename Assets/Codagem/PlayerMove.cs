@@ -19,7 +19,7 @@ public class PlayerMove : MonoBehaviour
     {
         vida = 3;
         velocidade = 5f;
-        forcaPulo = 5f;
+        forcaPulo =5.1f;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         contaVidas = FindFirstObjectByType<ContaVidas>();
@@ -29,11 +29,13 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
+        anim.SetBool("Corrida", moveInput != 0f);
         moveInput = Input.GetAxis("Horizontal");
 
         if (moveInput != 0f)
         {
             transform.localScale = new Vector3(Mathf.Sign(moveInput), 1f, 1f);
+            
         }
 
         if (noChao && Input.GetKeyDown(KeyCode.Space))
@@ -50,7 +52,7 @@ public class PlayerMove : MonoBehaviour
         }
         if (vida == 0)
         {
-            //puxaPause.GameOver();
+            puxaPause.GameOver();
         }
     }
 
