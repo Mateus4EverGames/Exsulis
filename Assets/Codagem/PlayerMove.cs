@@ -5,31 +5,37 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private ContaVidas contaVidas;
+    private Pause pausar;
     private float moveInput;
     private bool noChao = true;
     [SerializeField] private float velocidade;
     [SerializeField] private float forcaPulo;
     [SerializeField] private int vida;
     [SerializeField] private int dano = 1;
+    public Pause puxaPause;
 
 
     void Start()
     {
+        vida = 3;
         velocidade = 5f;
-        forcaPulo = 5f;
+        forcaPulo =5.1f;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         contaVidas = FindFirstObjectByType<ContaVidas>();
+        pausar = FindFirstObjectByType<Pause>();
     }
 
 
     void Update()
     {
+        anim.SetBool("Corrida", moveInput != 0f);
         moveInput = Input.GetAxis("Horizontal");
 
         if (moveInput != 0f)
         {
             transform.localScale = new Vector3(Mathf.Sign(moveInput), 1f, 1f);
+            
         }
 
         if (noChao && Input.GetKeyDown(KeyCode.Space))
@@ -44,6 +50,10 @@ public class PlayerMove : MonoBehaviour
             Ataque();
             //anim.SetBool
         }
+        if (vida == 0)
+        {
+            puxaPause.GameOver();
+        }
     }
 
     void FixedUpdate()
@@ -56,6 +66,13 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.CompareTag("Chao"))
         {
             noChao = true;
+        }
+        if (collision.gameObject.CompareTag("Queda"))
+        {
+            vida = 0;
+            Destroy(gameObject);
+            Time.timeScale = 0f;
+           pausar.GameOver();
         }
     }
 
