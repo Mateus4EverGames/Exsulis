@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: 62ff3576cc7fd2c46bdb6a30231ebe56
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5319881819458836934
+    second: spartanatk-Photoroom_0
+  - first:
+      213: 772978923409000099
+    second: spartanatk-Photoroom_1
+  - first:
+      213: -5050133865538233568
+    second: spartanatk-Photoroom_2
+  - first:
+      213: 8827366940707009618
+    second: spartanatk-Photoroom_3
+  - first:
+      213: 5648538574389304298
+    second: spartanatk-Photoroom_4
+  - first:
+      213: -2725091658022906933
+    second: spartanatk-Photoroom_5
+  - first:
+      213: -5219722279849937801
+    second: spartanatk-Photoroom_6
+  - first:
+      213: -2436026648410530404
+    second: spartanatk-Photoroom_7
+  - first:
+      213: -6691023235525056834
+    second: spartanatk-Photoroom_8
+  - first:
+      213: 5426004504166271952
+    second: spartanatk-Photoroom_9
+  - first:
+      213: -4434716678346027562
+    second: spartanatk-Photoroom_10
+  - first:
+      213: 8267992440242512967
+    second: spartanatk-Photoroom_11
+  - first:
+      213: 2339545963119352953
+    second: spartanatk-Photoroom_12
+  - first:
+      213: -7632981892461818859
+    second: spartanatk-Photoroom_13
+  - first:
+      213: -4398127860606944128
+    second: spartanatk-Photoroom_14
+  - first:
+      213: 3578368852314599165
+    second: spartanatk-Photoroom_15
+  - first:
+      213: 631870678648047386
+    second: spartanatk-Photoroom_16
+  - first:
+      213: -5326393017049893331
+    second: spartanatk-Photoroom_17
+  - first:
+      213: 5849698311639317988
+    second: spartanatk-Photoroom_18
+  - first:
+      213: 5483562025547900463
+    second: spartanatk-Photoroom_19
+  - first:
+      213: 5692198862920827412
+    second: spartanatk-Photoroom_20
+  - first:
+      213: -5605774891631495997
+    second: spartanatk-Photoroom_21
+  - first:
+      213: -5231178384912155831
+    second: spartanatk-Photoroom_22
+  - first:
+      213: -7031459163980304410
+    second: spartanatk-Photoroom_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spartanatk-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 851
+        width: 274
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b5c6c81025ae9b0800000000000000
+      internalID: -5050133865538233568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spartanatk-Photoroom_3
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 844
+        width: 326
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2543ed2967b118a70800000000000000
+      internalID: 8827366940707009618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spartanatk-Photoroom_13
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 588
+        width: 331
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c03daf863321690800000000000000
+      internalID: -7632981892461818859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spartanatk-Photoroom_14
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 586
+        width: 235
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c36c75306b6f2c0800000000000000
+      internalID: -4398127860606944128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spartanatk-Photoroom_19
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 325
+        width: 236
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26aa9ceb96891c40800000000000000
+      internalID: 5483562025547900463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spartanatk-Photoroom_20
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 318
+        width: 345
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412474f05b0cefe40800000000000000
+      internalID: 5692198862920827412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spartanatk-Photoroom_21
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 61
+        width: 230
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4308dcf694432b0800000000000000
+      internalID: -5605774891631495997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spartanatk-Photoroom_22
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 67
+        width: 334
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bfb9299fe1767b0800000000000000
+      internalID: -5231178384912155831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spartanatk-Photoroom_23
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 68
+        width: 233
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6efe946052d3b6e90800000000000000
+      internalID: -7031459163980304410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ff758d5df97a7bd4da02514a90d3b83c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spartanatk-Photoroom_13: -7632981892461818859
+      spartanatk-Photoroom_14: -4398127860606944128
+      spartanatk-Photoroom_19: 5483562025547900463
+      spartanatk-Photoroom_2: -5050133865538233568
+      spartanatk-Photoroom_20: 5692198862920827412
+      spartanatk-Photoroom_21: -5605774891631495997
+      spartanatk-Photoroom_22: -5231178384912155831
+      spartanatk-Photoroom_23: -7031459163980304410
+      spartanatk-Photoroom_3: 8827366940707009618
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

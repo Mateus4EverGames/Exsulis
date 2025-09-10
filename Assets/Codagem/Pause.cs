@@ -25,6 +25,7 @@ public class Pause : MonoBehaviour
     }
     public void PlayGOver()
     {
+        SceneManager.LoadScene("Tutorial");
         Time.timeScale = 1;
         gameOver.SetActive(false);
     }

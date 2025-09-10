@@ -14,7 +14,7 @@ public class Inimigos : MonoBehaviour
     [SerializeField] private LayerMask layerChao;
     [SerializeField] private Transform sensorChao;
     private bool noChao;
-    //private Animator anim;
+    private Animator anim;
     private Rigidbody2D rb;
     private Transform player;
     void Start()
@@ -25,7 +25,7 @@ public class Inimigos : MonoBehaviour
         velocidade = 2f;
         distanciaPersegue = 8f;
         distanciaDeAtaque = 1.5f;
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         player = FindFirstObjectByType<PlayerMove>().transform;
         rb = GetComponent<Rigidbody2D>();
 
@@ -72,13 +72,13 @@ public class Inimigos : MonoBehaviour
         {
             Vector2 direcao = (player.position - transform.position).normalized;
             transform.position += (Vector3)direcao * velocidade * Time.deltaTime;
-            //anim.SetBool("Run", true);
+            anim.SetBool("Correr", true);
         }
         else
         {
-            //anim.SetBool("Run", false);
+            anim.SetBool("Correr", false);
         }
-        //anim.SetBool("IsAttack", distancia < distanciaDeAtaque);
+        anim.SetBool("Ataque", distancia < distanciaDeAtaque);
     }
 
     public void CausarDano()
