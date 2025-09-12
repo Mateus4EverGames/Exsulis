@@ -1,6 +1,5 @@
 Falta
 
-Sprites (Exsulis: ataque, Hermes ou Zeus);
-Prefab inimigos comuns;
-Hermes;
+Sprites (Exsulis: pulo(gemini ja fez, dps eu vou adicionar), Zeus);
 Zeus;
+música;
