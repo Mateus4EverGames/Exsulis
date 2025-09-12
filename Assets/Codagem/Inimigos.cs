@@ -19,7 +19,7 @@ public class Inimigos : MonoBehaviour
     private Transform player;
     void Start()
     {
-        vida = 10;
+        vida = 3;
         forcaPulo = 7f;
         noChao = true;
         velocidade = 2f;
@@ -109,6 +109,10 @@ public class Inimigos : MonoBehaviour
         if (collision.gameObject.CompareTag("Chao"))
         {
             noChao = true;
+        }
+        if (collision.gameObject.CompareTag("Queda"))
+        {
+            Destroy(gameObject);
         }
     }
     private void OnCollisionExit2D(Collision2D collision)

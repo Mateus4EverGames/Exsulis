@@ -47,8 +47,8 @@ public class PlayerMove : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Ataque();
-            //anim.SetBool
+            //Ataque();
+            anim.SetTrigger("Ataque");
         }
         if (vida == 0)
         {
@@ -96,10 +96,8 @@ public class PlayerMove : MonoBehaviour
         contaVidas.DestroiCoracao();
         if (vida <= 0)
         {
-            //mortePainel.SetActive(true);
             Destroy(gameObject);
             Time.timeScale = 0f;
-
             //anim.SetTrigger("Morreu");
         }
     }
