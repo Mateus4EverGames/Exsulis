@@ -199,6 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85ffe320c07cd3c409ea97d4497bd185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  intervaloDeAtaque: 0
   dano: 1
   vidaInimigo: {fileID: 0}
   vida: 0

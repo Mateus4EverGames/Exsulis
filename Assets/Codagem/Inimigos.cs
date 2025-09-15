@@ -4,6 +4,8 @@ using TMPro;
 
 public class Inimigos : MonoBehaviour
 {
+
+    [SerializeField] private float intervaloDeAtaque;
     [SerializeField] private int dano = 1;
     [SerializeField] private TextMeshPro vidaInimigo;
     [SerializeField] private int vida;
@@ -13,10 +15,11 @@ public class Inimigos : MonoBehaviour
     [SerializeField] private float forcaPulo;
     [SerializeField] private LayerMask layerChao;
     [SerializeField] private Transform sensorChao;
+    private float timerAtaque;
     private bool noChao;
     private Animator anim;
     private Rigidbody2D rb;
-    private Transform player;
+    private PlayerMove player;
     void Start()
     {
         vida = 3;
@@ -26,7 +29,7 @@ public class Inimigos : MonoBehaviour
         distanciaPersegue = 8f;
         distanciaDeAtaque = 1.5f;
         anim = GetComponent<Animator>();
-        player = FindFirstObjectByType<PlayerMove>().transform;
+        player = FindFirstObjectByType<PlayerMove>();
         rb = GetComponent<Rigidbody2D>();
 
         if(vidaInimigo != null)
@@ -36,9 +39,15 @@ public class Inimigos : MonoBehaviour
     }
     void Update()
     {
-        float distancia = Vector2.Distance(transform.position, player.position);
+        float distancia = Vector2.Distance(transform.position, player.transform.position);
+        timerAtaque += Time.deltaTime;
 
-        if (player.position.x < transform.position.x)
+        if (distancia < distanciaDeAtaque)
+        {
+            CausarDano();
+        }
+        
+        if (player.transform.position.x < transform.position.x)
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
         }
@@ -47,8 +56,8 @@ public class Inimigos : MonoBehaviour
             transform.localScale = new Vector3(1f, 1f, 1f);
         }
 
-        float distanciaAltura = player.position.y - transform.position.y;
-        float distanciaHorizontal = Math.Abs(player.position.x - transform.position.x);
+        float distanciaAltura = player.transform.position.y - transform.position.y;
+        float distanciaHorizontal = Math.Abs(player.transform.position.x - transform.position.x);
         bool temChao = Physics2D.OverlapCircle(sensorChao.position, 0.15f, layerChao);
 
         if (distancia < distanciaPersegue && distancia > distanciaDeAtaque && temChao)
@@ -63,14 +72,14 @@ public class Inimigos : MonoBehaviour
             }
             else
             {
-                Vector2 direcao = (player.position - transform.position).normalized;
+                Vector2 direcao = (player.transform.position - transform.position).normalized;
                 transform.position += (Vector3)direcao * velocidade * Time.deltaTime;
             }
         }
 
         if (distancia < distanciaPersegue && distancia > distanciaDeAtaque)
         {
-            Vector2 direcao = (player.position - transform.position).normalized;
+            Vector2 direcao = (player.transform.position - transform.position).normalized;
             transform.position += (Vector3)direcao * velocidade * Time.deltaTime;
             anim.SetBool("Correr", true);
         }
@@ -83,14 +92,12 @@ public class Inimigos : MonoBehaviour
 
     public void CausarDano()
     {
-        Collider2D playerCol = Physics2D.OverlapCircle(transform.position, 1f, LayerMask.GetMask("Player"));
-        if (playerCol != null)
+        if (timerAtaque >= intervaloDeAtaque)
         {
-            PlayerMove player = playerCol.GetComponent<PlayerMove>();
-            if (player != null)
-            {
-                player.ReceberDano(dano);
-            }
+            anim.SetTrigger("Ataque"); // ou anim.SetBool("Ataque", true)
+            // Aqui você chama o dano no player
+            player.ReceberDano(dano);
+            timerAtaque = 0f;
         }
     }
 

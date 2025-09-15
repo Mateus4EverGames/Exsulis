@@ -6,6 +6,8 @@ public class PlayerMove : MonoBehaviour
     private Animator anim;
     private ContaVidas contaVidas;
     private Pause pausar;
+    private Inimigos inimigo;
+    private ViloesCodes vilao;
     private float moveInput;
     private bool noChao = true;
     [SerializeField] private float velocidade;
@@ -17,6 +19,8 @@ public class PlayerMove : MonoBehaviour
 
     void Start()
     {
+        vilao = FindFirstObjectByType<ViloesCodes>();
+        inimigo = FindFirstObjectByType<Inimigos>();
         vida = 3;
         velocidade = 5f;
         forcaPulo =5.1f;
@@ -49,6 +53,7 @@ public class PlayerMove : MonoBehaviour
         {
             //Ataque();
             anim.SetTrigger("Ataque");
+            //Som do ataque
         }
         if (vida == 0)
         {
@@ -88,6 +93,15 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
+        foreach (Collider2D vilaoCol in inimigos)
+        {
+            ViloesCodes chefe = vilaoCol.GetComponent<ViloesCodes>();
+            if (chefe != null)
+            {
+                chefe.ReceberDano(dano);
+            }
+
+        }
     }
 
     public void ReceberDano(int dano)
@@ -98,6 +112,7 @@ public class PlayerMove : MonoBehaviour
         {
             Destroy(gameObject);
             Time.timeScale = 0f;
+            pausar.GameOver();
             //anim.SetTrigger("Morreu");
         }
     }
