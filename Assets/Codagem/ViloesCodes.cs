@@ -12,8 +12,9 @@ public class ViloesCodes : MonoBehaviour
     [SerializeField] private float tempoChao;
     [SerializeField] private float tempoCaindo;
     [SerializeField] private float detectaDistancia;
-
+    [SerializeField] private AudioClip vitoria;
     // Componentes
+    private AudioSource audioZeus;
     private Animator anim;
     private Rigidbody2D rb;
     private Transform player;
@@ -61,15 +62,16 @@ public class ViloesCodes : MonoBehaviour
                 if (timerEstado >= tempoVoando)
                 {
                     estadoAtual = Estado.Atacando;
+                    anim.SetBool("IsVoando", true);
                     timerEstado = 0f;
                     raiosLançados = 0;
                     timerAtaque = 0f;
                     rb.velocity = Vector2.zero;
                 }
-                else
+                /*else
                 {
                     rb.velocity = Vector2.zero;
-                }
+                }*/
                 break;
 
             case Estado.Atacando:
@@ -109,6 +111,8 @@ public class ViloesCodes : MonoBehaviour
 
                 if (timerEstado >= tempoChao)
                 {
+                    anim.SetBool("IsVoando", false);
+                    anim.SetBool("IsAtacando", false);
                     estadoAtual = Estado.Voando;
                     timerEstado = 0f;
                 }
@@ -120,7 +124,7 @@ public class ViloesCodes : MonoBehaviour
     void LancaRaio()
     {
         Instantiate(raioPrefab, pontoDeLancamento.position, Quaternion.identity);
-        // Adicione animação ou efeitos se quiser
+        anim.SetBool("IsAtacando", true);
     }
 
     // Recebe dano do player
@@ -130,6 +134,7 @@ public class ViloesCodes : MonoBehaviour
         if (vida <= 0)
         {
             Destroy(gameObject);
+            audioZeus.PlayOneShot(vitoria);
             //pausar.Vitoria();
             //anim.SetTrigger("Morreu");
         }

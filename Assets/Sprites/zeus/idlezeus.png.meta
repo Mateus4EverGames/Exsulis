@@ -1,0 +1,361 @@
+fileFormatVersion: 2
+guid: af7af3bc1b48e854c9b1d443531fe3ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -24233557050050028
+    second: idlezeus_0
+  - first:
+      213: 1340670302285172955
+    second: idlezeus_1
+  - first:
+      213: -4408080061349787303
+    second: idlezeus_2
+  - first:
+      213: 5647609787234672966
+    second: idlezeus_3
+  - first:
+      213: 2075587160091089120
+    second: idlezeus_4
+  - first:
+      213: 3769460173656403503
+    second: idlezeus_5
+  - first:
+      213: 7472610298982069116
+    second: idlezeus_6
+  - first:
+      213: 8537547355341701606
+    second: idlezeus_7
+  - first:
+      213: 8959223093345363178
+    second: idlezeus_8
+  - first:
+      213: -5090830127969237001
+    second: idlezeus_9
+  - first:
+      213: 7256412476612122989
+    second: idlezeus_10
+  - first:
+      213: -4334800154039929759
+    second: idlezeus_11
+  - first:
+      213: 2162466878865270221
+    second: idlezeus_12
+  - first:
+      213: -597444820998417252
+    second: idlezeus_13
+  - first:
+      213: -5389877121320094949
+    second: idlezeus_14
+  - first:
+      213: -1905632893823609729
+    second: idlezeus_15
+  - first:
+      213: 5768016563932498051
+    second: idlezeus_16
+  - first:
+      213: 7549068317329880575
+    second: idlezeus_17
+  - first:
+      213: 4630962288548063213
+    second: idlezeus_18
+  - first:
+      213: 5271985169729001197
+    second: idlezeus_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idlezeus_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 537
+        width: 172
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a336055b7e9aff0800000000000000
+      internalID: -24233557050050028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlezeus_1
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 537
+        width: 172
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd09f9869840b9210800000000000000
+      internalID: 1340670302285172955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlezeus_2
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 537
+        width: 202
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95983c90a8a53d2c0800000000000000
+      internalID: -4408080061349787303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlezeus_3
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 536
+        width: 173
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641642edd27506e40800000000000000
+      internalID: 5647609787234672966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlezeus_4
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 183
+        width: 171
+        height: 337
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e857917687fdcc10800000000000000
+      internalID: 2075587160091089120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlezeus_8
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 183
+        width: 171
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae4a3567fed855c70800000000000000
+      internalID: 8959223093345363178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlezeus_9
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 183
+        width: 171
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7898298fcb959b0800000000000000
+      internalID: -5090830127969237001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlezeus_10
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 183
+        width: 172
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d699d2c83b4f3b460800000000000000
+      internalID: 7256412476612122989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: efcfe5648901d974986f4d4ec1c2f6d5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      idlezeus_0: -24233557050050028
+      idlezeus_1: 1340670302285172955
+      idlezeus_10: 7256412476612122989
+      idlezeus_2: -4408080061349787303
+      idlezeus_3: 5647609787234672966
+      idlezeus_4: 2075587160091089120
+      idlezeus_8: 8959223093345363178
+      idlezeus_9: -5090830127969237001
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

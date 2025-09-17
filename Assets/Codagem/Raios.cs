@@ -11,7 +11,7 @@ public class Raios : MonoBehaviour
 
     void Start()
     {
-        velocidade = 10f;
+        velocidade = 7f;
         player = FindFirstObjectByType<PlayerMove>();
         direcao = (player.transform.position - transform.position).normalized;
     }

@@ -20,14 +20,17 @@ public class Inimigos : MonoBehaviour
     private Animator anim;
     private Rigidbody2D rb;
     private PlayerMove player;
+    private bool podeDarDano;
     void Start()
     {
+        podeDarDano = false;
+        intervaloDeAtaque = 1.5f;
         vida = 3;
         forcaPulo = 7f;
         noChao = true;
         velocidade = 2f;
         distanciaPersegue = 8f;
-        distanciaDeAtaque = 1.5f;
+        distanciaDeAtaque = 2f;
         anim = GetComponent<Animator>();
         player = FindFirstObjectByType<PlayerMove>();
         rb = GetComponent<Rigidbody2D>();
@@ -42,11 +45,7 @@ public class Inimigos : MonoBehaviour
         float distancia = Vector2.Distance(transform.position, player.transform.position);
         timerAtaque += Time.deltaTime;
 
-        if (distancia < distanciaDeAtaque)
-        {
-            CausarDano();
-        }
-        
+      
         if (player.transform.position.x < transform.position.x)
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
@@ -56,6 +55,13 @@ public class Inimigos : MonoBehaviour
             transform.localScale = new Vector3(1f, 1f, 1f);
         }
 
+        if (distancia <= distanciaDeAtaque && timerAtaque >= intervaloDeAtaque)
+        {
+            anim.SetTrigger("Ataque");
+            timerAtaque = 0f;
+            podeDarDano = true;
+        }
+        
         float distanciaAltura = player.transform.position.y - transform.position.y;
         float distanciaHorizontal = Math.Abs(player.transform.position.x - transform.position.x);
         bool temChao = Physics2D.OverlapCircle(sensorChao.position, 0.15f, layerChao);
@@ -92,10 +98,10 @@ public class Inimigos : MonoBehaviour
 
     public void CausarDano()
     {
-        if (timerAtaque >= intervaloDeAtaque)
+        if (podeDarDano && player != null)
         {
-            anim.SetTrigger("Ataque"); // ou anim.SetBool("Ataque", true)
-            // Aqui você chama o dano no player
+
+            anim.SetTrigger("Ataque");
             player.ReceberDano(dano);
             timerAtaque = 0f;
         }

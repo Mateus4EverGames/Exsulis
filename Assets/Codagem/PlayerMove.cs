@@ -8,12 +8,17 @@ public class PlayerMove : MonoBehaviour
     private Pause pausar;
     private Inimigos inimigo;
     private ViloesCodes vilao;
+    private AudioSource audioPlayer;
     private float moveInput;
     private bool noChao = true;
     [SerializeField] private float velocidade;
     [SerializeField] private float forcaPulo;
     [SerializeField] private int vida;
     [SerializeField] private int dano = 1;
+    [SerializeField] private AudioClip espada;
+    [SerializeField]
+    private AudioClip morte;
+    [SerializeField] private AudioClip recebeDano;
     public Pause puxaPause;
 
 
@@ -24,6 +29,7 @@ public class PlayerMove : MonoBehaviour
         vida = 3;
         velocidade = 5f;
         forcaPulo =5.1f;
+        audioPlayer = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         contaVidas = FindFirstObjectByType<ContaVidas>();
@@ -49,14 +55,17 @@ public class PlayerMove : MonoBehaviour
             //anim.SetBool
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && Time.timeScale == 1)
         {
             //Ataque();
             anim.SetTrigger("Ataque");
-            //Som do ataque
+            audioPlayer.PlayOneShot(espada);
+            
+
         }
         if (vida == 0)
         {
+            audioPlayer.PlayOneShot(morte);
             puxaPause.GameOver();
         }
     }
@@ -77,7 +86,7 @@ public class PlayerMove : MonoBehaviour
             vida = 0;
             Destroy(gameObject);
             Time.timeScale = 0f;
-           pausar.GameOver();
+            pausar.GameOver();
         }
     }
 
@@ -93,20 +102,21 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
-        foreach (Collider2D vilaoCol in inimigos)
+        Collider2D[] chefes = Physics2D.OverlapCircleAll(transform.position, 1f, LayerMask.GetMask("Vilao"));
+        foreach (Collider2D chefeCol in chefes)
         {
-            ViloesCodes chefe = vilaoCol.GetComponent<ViloesCodes>();
+            ViloesCodes chefe = chefeCol.GetComponent<ViloesCodes>();
             if (chefe != null)
             {
                 chefe.ReceberDano(dano);
             }
-
         }
     }
 
     public void ReceberDano(int dano)
     {
         vida -= dano;
+        audioPlayer.PlayOneShot(recebeDano);
         contaVidas.DestroiCoracao();
         if (vida <= 0)
         {
